@@ -1,0 +1,97 @@
+footer {
+  background-color: $primaryVeryDark;
+  padding-top: 4rem;
+  img {
+    margin-bottom: 2rem;
+    width: 12rem;
+  }
+  div:first-child > div {
+    @media screen and ($desktop) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  p {
+    color: white;
+    text-align: left;
+    padding-left: 3rem;
+    position: relative;
+
+    &.phone::before {
+      content: "";
+      display: block;
+      background-image: url(../images/icon-phone.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 1.5rem;
+      height: 1.5rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &.mail::before {
+      content: "";
+      display: block;
+      background-image: url(../images/icon-email.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 1.5rem;
+      height: 1.5rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  ul {
+    margin: 3rem 0;
+    @media screen and ($desktop) {
+      margin: 0;
+      margin-bottom: 3rem;
+    }
+    a {
+      @include webFonts($opensans, 1rem, 400) {
+        color: white;
+      }
+      display: inline-block;
+      margin: 0.5rem 0;
+      &:hover {
+        color: $primaryDesaturated;
+      }
+    }
+  }
+  .icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    a {
+      height: 3rem;
+      width: 3rem;
+      border: 1px solid white;
+      border-radius: 50%;
+      text-align: center;
+      margin: 0 0.5rem;
+      i {
+        color: white;
+        font-size: 1.2rem;
+        margin: 0.8rem 0;
+      }
+      &:hover {
+        border: 1px solid $primaryDesaturated;
+        i {
+          color: $primaryDesaturated;
+        }
+      }
+    }
+  }
+  .attribution {
+    padding: 1rem 0;
+    margin: 0;
+    font-size: 10px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}

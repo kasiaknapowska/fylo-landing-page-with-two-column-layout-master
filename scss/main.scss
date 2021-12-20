@@ -1,0 +1,11 @@
+@import "generic/reset";
+
+@import "settings/variables";
+@import "settings/mixins";
+@import "settings/commons";
+
+@import "elements/header.scss";
+@import "elements/intro.scss";
+@import "elements/info.scss";
+@import "elements/sign.scss";
+@import "elements/footer.scss";

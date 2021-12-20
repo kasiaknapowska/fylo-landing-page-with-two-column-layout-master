@@ -1,0 +1,27 @@
+@use "sass:color";
+
+@mixin webFonts($family, $size, $weight) {
+    font-family: $family;
+    font-size: $size;
+    color: black;
+    font-weight: $weight;
+    line-height: 150%;
+    @content;
+}
+@mixin btn($font-size, $padding) {
+    font-family: $raleway;
+    color: white;
+    font-weight: 700;
+    display: block;
+    text-decoration: none;
+    font-size: $font-size;
+    background-color: $accentBright;
+    padding: $padding;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .1);
+    margin: 1rem 0;
+    &:hover {
+        background-color: color.scale($accentBright, $lightness: 30%);
+    }
+  }

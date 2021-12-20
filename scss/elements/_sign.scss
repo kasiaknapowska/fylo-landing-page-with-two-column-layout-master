@@ -1,0 +1,44 @@
+.sign_up {
+  background-color: $primaryDesaturated;
+  padding: 4rem 0 3rem 0;
+  > div {
+    @media screen and ($desktop) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    > div {
+      @media screen and ($desktop) {
+        width: 50%;
+      }
+      h1,
+      p {
+        color: white;
+      }
+    }
+    form {
+      @media screen and ($desktop) {
+        width: 40%;
+      }
+      input,
+      button {
+        width: 70%;
+        margin: 1rem auto;
+      }
+      input {
+        @media screen and ($desktop) {
+          width: 100%;
+        }
+      }
+      button {
+        @media screen and ($desktop) {
+          width: 80%;
+          margin: 1rem 0;
+        }
+        @media screen and (min-width: 1240px) {
+          width: 60%;
+        }
+      }
+    }
+  }
+}

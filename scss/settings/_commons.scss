@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  a {
+    text-decoration: none;
+    display: inline-block;
+  }
+  h1 {
+    @include webFonts($raleway, 2rem, 700) {
+      text-align: center;
+      @media screen and ($desktop) {
+        text-align: left;
+      }
+    }
+  }
+  p {
+    @include webFonts($opensans, 1rem, 400) {
+      margin: 1rem 0;
+      text-align: center;
+      @media screen and ($desktop) {
+        text-align: left;
+      }
+    }
+  }
+}
+form {
+  margin: 3rem 0;
+  input {
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 44px;
+    padding: 0 1rem;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.1);
+    display: block;
+    &::placeholder {
+      color: $neutralLight;
+    }
+    &:focus {
+      border: 2px solid $accentBright;
+    }
+  }
+  [type="submit"] {
+    @include btn(0.9rem, 0.8rem 3rem);
+  }
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  @media screen and ($tablet) {
+    width: 80%;
+  }
+  @media screen and ($desktop) {
+    max-width: 1080px;
+  }
+}

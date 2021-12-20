@@ -1,0 +1,19 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+    .logo {
+        width: 8rem;
+    }
+    ul {
+        display: flex;
+        a {
+            @include webFonts($raleway, 1rem, 400);
+            margin-left: 1rem;
+            @media screen and ($mobile) {
+                margin-left: 3rem;
+            }
+        }
+    }
+}

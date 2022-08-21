@@ -25,6 +25,7 @@
       crossorigin="anonymous"
     />
     <title>Frontend Mentor | Fylo landing page with two column layout</title>
+    <script defer src="index.js"></script>
   </head>
   <body>
     <header class="container">
@@ -33,7 +34,7 @@
         <ul>
           <li><a href="#">Features</a></li>
           <li><a href="#">Team</a></li>
-          <li><a href="#">Sign in</a></li>
+          <li><a href="#sign_up">Sign in</a></li>
         </ul>
       </nav>
     </header>
@@ -47,9 +48,10 @@
             them wherever you need, share and collaborate with friends, family,
             and co-workers.
           </p>
-          <form>
-            <input type="email" id="email" placeholder="Enter your e-mail..." />
+          <form class="sign_in_form">
+            <input id="email" placeholder="Enter your e-mail..." />
             <button type="submit">Get Started</button>
+            <p class="message"></p>
           </form>
         </div>
       </section>
@@ -80,7 +82,7 @@
           </div>
         </div>
       </section>
-      <section class="sign_up">
+      <section class="sign_up" id="sign_up">
         <div class="container">
           <div>
             <h1>Get early access today</h1>
@@ -90,9 +92,10 @@
               would be happy to help you.
             </p>
           </div>
-          <form>
-            <input type="email" id="email" placeholder="email@example.com" />
+          <form class="sign_up_form">
+            <input id="email" placeholder="email@example.com" />
             <button type="submit">Get Started For Free</button>
+            <p class="message"></p>
           </form>
         </div>
       </section>
@@ -117,13 +120,13 @@
             <li><a href="">Privacy</a></li>
           </ul>
           <div class="icon">
-            <a href="https://www.facebook.com/"
+            <a href="https://www.facebook.com/" target="_blank"
               ><i class="fab fa-facebook-f"></i
             ></a>
-            <a href="https://www.twitter.com/"
+            <a href="https://www.twitter.com/" target="_blank"
               ><i class="fab fa-twitter"></i
             ></a>
-            <a href="https://www.instagram.com/"
+            <a href="https://www.instagram.com/" target="_blank"
               ><i class="fab fa-instagram"></i
             ></a>
           </div>

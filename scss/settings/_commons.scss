@@ -26,6 +26,7 @@ body {
 }
 form {
   margin: 3rem 0;
+  position: relative;
   input {
     outline: none;
     border: 1px solid grey;
@@ -54,4 +55,29 @@ form {
   @media screen and ($desktop) {
     max-width: 1080px;
   }
+}
+.d-none {
+  display: none;
+}
+.message {
+  text-transform: uppercase;
+  position: absolute;
+  top: -50px;
+  background-color:rgba(255, 255, 255, 0.9);
+  padding: 0 1rem;
+  border-radius: 5px;
+  @media screen and ($tablet) {
+    top: -46px;
+  }
+  @media screen and ($desktop) {
+    top: -30px;
+  }
+}
+.error {
+  color: $accentError;
+  border: 1px solid $accentError;
+}
+.success {
+  color: $accentModerate;
+  border: 1px solid $accentModerate;
 }
